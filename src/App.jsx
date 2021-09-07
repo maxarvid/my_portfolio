@@ -2,12 +2,20 @@ import React from "react";
 import Hello from "./Hello";
 import Header from "./Header";
 import Footer from "./Footer";
+import About from "./About";
+import Projects from "./Projects";
+import { Switch, Route } from "react-router";
 
 const App = () => {
   return (
     <>
       <Header />
-      <Hello />
+      <Switch>
+        <Route exact path="/" component={Hello}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/projects" component={Projects}></Route>
+        <Hello />
+      </Switch>
       <Footer />
     </>
   );
