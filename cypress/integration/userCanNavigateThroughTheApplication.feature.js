@@ -21,12 +21,14 @@ describe("User can navigate the app", () => {
     });
 
     it("does not display Hello World", () => {
-      cy.get("#hello").should(not.exist);
+      cy.get("#hello").should("not.exist");
     });
   });
 
   describe("to My Projects tab and it", () => {
-    cy.get('"projects-tab').click();
+    beforeEach(() => {
+      cy.get("#projects-tab").click();
+    });
 
     it("displays My Projects header", () => {
       cy.get("#projects-header").should("contain", "My Projects");
