@@ -6,7 +6,7 @@ describe("User can see a list of projects", () => {
 
   it("displays the first project", () => {
     cy.get("#project-1").within(() => {
-      cy.get(".image").should("exists");
+      cy.get(".image").should("exist");
       cy.get(".header").should("contain", "My First Website");
       cy.get(".description").should("contain", "This was my first project.");
     });
