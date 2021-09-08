@@ -4,7 +4,7 @@ describe("User can see a list of projects", () => {
     cy.get("#projects-tab").click();
   });
 
-  it("displays the first project", () => {
+  it.only("displays the first project", () => {
     cy.get("#project-1").within(() => {
       cy.get(".image").should("exist");
       cy.get(".header").should("contain", "My First Website");

@@ -8,8 +8,8 @@ class Projects extends Component {
   };
 
   componentDidMount() {
-    axios.get("./data/projects.json").then((respone) => {
-      this.setState({ projects: respone.data });
+    axios.get("./data/projects.json").then((response) => {
+      this.setState({ projects: response.data });
     });
   }
 
