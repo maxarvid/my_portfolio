@@ -20,6 +20,8 @@ class Projects extends Component {
       return (
         <div id={`project-${project.id}`} key={project.id}>
           <h3>{project.name}</h3>
+          <image href={project.image}></image>
+          <p>{project.decription}</p>
         </div>
       );
     });

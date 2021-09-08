@@ -1,10 +1,21 @@
 [
   {
     "id": 1,
-    "name": "My First Website"
+    "name": "My First Website",
+    "image": "http://www.4president.us/websites/2000/images/gorelieberman081800home.png",
+    "description": "This was not my first project, but it was the first time I became aware of the peculiar US safeguards against the popular vote."
   },
   {
     "id": 2,
-    "name": "FizzBuzz"
-  }
+    "name": "UI Design",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/User_experience_design.png",
+    "description": "Going to do a whole lot more of this."
+  },
+  {
+    "id": 3,
+    "name": "Mobile UI Design",
+    "image": "https://www.designer-daily.com/wp-content/uploads/2021/01/mazreemobile1.jpg",
+    "description": "Isn't mobile just the best?"
+  },
+
 ]
