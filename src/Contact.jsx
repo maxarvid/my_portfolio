@@ -8,10 +8,17 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    setIsSubmitted(true);
+    // setIsSubmitted(true);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
     e.preventDefault();
   };
 
@@ -23,19 +30,19 @@ const ContactForm = () => {
       .join("&");
   };
 
-  useEffect(() => {
-    if (isSubmitted) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...formData }),
-      })
-        .then(() => alert("Success!"))
-        .then(() => setIsSubmitted(false))
-        .then(() => setFormData({ name: "", email: "", message: "" }))
-        .catch((error) => alert(error));
-    }
-  }, [formData, isSubmitted]);
+  // useEffect(() => {
+  //   if (isSubmitted) {
+  //     fetch("/", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: encode({ "form-name": "contact", ...formData }),
+  //     })
+  //       .then(() => alert("Success!"))
+  //       .then(() => setIsSubmitted(false))
+  //       .then(() => setFormData({ name: "", email: "", message: "" }))
+  //       .catch((error) => alert(error));
+  //   }
+  // }, [formData, isSubmitted]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
