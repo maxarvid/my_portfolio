@@ -3,6 +3,7 @@
     "id": 1,
     "name": "My First Website",
     "image": "https://live.staticflickr.com/59/162647294_84c98b34f2_z.jpg",
+    "alt": "A picture of a Purgatory Hill Harp",
     "description": "This was my first project."
   },
   {
