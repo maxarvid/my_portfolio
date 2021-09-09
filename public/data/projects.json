@@ -10,12 +10,14 @@
     "id": 2,
     "name": "UI Design",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/User_experience_design.png",
+    "alt": "A cartoon of poeple workshopping user interface design",
     "description": "Making ruby backend applications is fun."
   },
   {
     "id": 3,
     "name": "Mobile UI Design",
     "image": "https://www.designer-daily.com/wp-content/uploads/2021/01/mazreemobile1.jpg",
+    "alt": "A mockup of several pages of a mobile application",
     "description": "I like to design for the mobile platform"
   }
 ]
