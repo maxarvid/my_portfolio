@@ -70,8 +70,4 @@ class ContactForm extends Component {
   }
 }
 
-const Contact = () => {
-  return <div></div>;
-};
-
 export default ContactForm;
