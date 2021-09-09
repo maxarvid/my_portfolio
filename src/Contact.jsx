@@ -28,7 +28,7 @@ const ContactForm = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact-form", ...formData }),
+        body: encode({ "form-name": "contact", ...formData }),
       })
         .then(() => alert("Success!"))
         .then(() => setIsSubmitted(false))
@@ -44,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <Container>
-      <Form onSubmit={handleSubmit} netlify name="contact-form">
+      <Form onSubmit={handleSubmit} netlify name="contact">
         <Form.Field>
           <label>Your Name</label>
           <input
