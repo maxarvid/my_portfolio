@@ -84,7 +84,6 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = { name: "", email: "", message: "" };
-    debugger;
   }
 
   handleSubmit = (e) => {
@@ -101,7 +100,7 @@ class ContactForm extends Component {
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { name, email, message } = this.state;
+    const { name, email } = this.state;
     return (
       <Container>
         <Form onSubmit={this.handleSubmit} netlify name="contact">
