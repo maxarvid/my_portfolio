@@ -33,39 +33,78 @@ const ContactForm = () => {
   };
 
   return (
-    <Container>
-      <Form onSubmit={handleSubmit} netlify name="contact">
-        <input type="hidden" name="form-name" value="contact" />
-        <Form.Field>
-          <label>Your Name</label>
+    <form onSubmit={handleSubmit} netlify name="contact">
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label>
+          Your Name:
           <input
             type="text"
             name="name"
+            value={name}
             onChange={handleChange}
-            value={formData.name}
-            placeholder="Your name"
           />
-        </Form.Field>
-        <Form.Field>
-          <label>Your Email</label>
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email:
           <input
             type="email"
             name="email"
-            value={formData.email}
+            value={email}
             onChange={handleChange}
-            placeholder="Your email"
           />
-        </Form.Field>
-        <Form.TextArea
-          label="Message"
-          name="message"
-          // value={formData.message}
-          onChange={handleChange}
-          placeholder="What's on your mind?"
-        />
-        <Form.Button type="submit">Send</Form.Button>
-      </Form>
-    </Container>
+        </label>
+      </p>
+      <p>
+        <label>
+          Message:
+          <textarea
+            name="message"
+            // value={message}
+            onChange={handleChange}
+          />
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    // <Container>
+    //   <Form onSubmit={handleSubmit} netlify name="contact">
+    //     <input type="hidden" name="form-name" value="contact" />
+    //     <Form.Field>
+    //       <label>Your Name</label>
+    //       <input
+    //         type="text"
+    //         name="name"
+    //         onChange={handleChange}
+    //         value={formData.name}
+    //         placeholder="Your name"
+    //       />
+    //     </Form.Field>
+    //     <Form.Field>
+    //       <label>Your Email</label>
+    //       <input
+    //         type="email"
+    //         name="email"
+    //         value={formData.email}
+    //         onChange={handleChange}
+    //         placeholder="Your email"
+    //       />
+    //     </Form.Field>
+    //     <Form.TextArea
+    //       label="Message"
+    //       name="message"
+    //       // value={formData.message}
+    //       onChange={handleChange}
+    //       placeholder="What's on your mind?"
+    //     />
+    //     <Form.Button type="submit">Send</Form.Button>
+    //   </Form>
+    // </Container>
   );
 };
 
@@ -129,7 +168,7 @@ export default ContactForm;
 //             label="Message"
 //             control={TextArea}
 //             placeholder="What's on your mind?"
-//             // value={message} 
+//             // value={message}
 //             onChange={this.handleChange}
 //           />
 //           <Button type="submit">Send</Button>
