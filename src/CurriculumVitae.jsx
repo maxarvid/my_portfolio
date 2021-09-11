@@ -14,9 +14,9 @@ const CurriculumVitae = () => {
   let itemList = items.map((item) => {
     return (
       <div id={`item-${item.id}`} key={item.id}>
-        <h3 id="item-name">{item.name}</h3>
-        <h3 id="item-range">{item.range}</h3>
-        <p id="item-description">{item.description}</p>
+        <h3 id="name">{item.name}</h3>
+        <h3 id="range">{item.range}</h3>
+        <p id="description">{item.description}</p>
       </div>
     );
   });

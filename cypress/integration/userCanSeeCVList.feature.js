@@ -6,6 +6,10 @@ describe("User can see a list in the Curriculum Vitae", () => {
 
 
   it('displays the first item in the CV', () => {
-    cy.get('#item-1').should('contain', 'Clients inlcude MakeGood and the Edward E. Ford Foundation.')
+    cy.get('#item-1').within(() => {
+      cy.get('#name').should('contain', 'Freelance  ')
+      cy.get('#range').should('exist')
+      cy.get('#description').should('contain', 'Clients inlcude Make.Good and the Edward E. Ford Foundation.')
+    })
   });
 });
