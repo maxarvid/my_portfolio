@@ -13,16 +13,18 @@ const CurriculumVitae = () => {
 
   let itemList = items.map((item) => {
     return (
-      <div id={`item-${item.id}`} key={item.id}>
-        <h3 id="name">{item.name}</h3>
-        <h3 id="range">{item.range}</h3>
-        <p id="description">{item.description}</p>
-      </div>
+      <List.Item>
+        <div id={`item-${item.id}`} key={item.id}>
+          <h2 id="name">{item.name}</h2>
+          <h2 id="range">{item.range}</h2>
+          <p id="description">{item.description}</p>
+        </div>
+      </List.Item>
     );
   });
   return (
     <Container>
-      <List>{itemList}</List>
+      <List celled>{itemList}</List>
     </Container>
   );
 };
