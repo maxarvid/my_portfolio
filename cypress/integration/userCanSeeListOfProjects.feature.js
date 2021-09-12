@@ -15,7 +15,7 @@ describe("User can see a list of projects", () => {
   it("displays the second project", () => {
     cy.get("#project-2").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "FizzBuzz");
+      cy.get(".header").should("contain", "UI Design");
       cy.get(".description").should(
         "contain",
         "Making ruby backend applications is fun."
@@ -26,7 +26,7 @@ describe("User can see a list of projects", () => {
   it('displays the third project', () => {
     cy.get("#project-3").within(() => {
       cy.get(".image").should("exist")
-      cy.get(".header").should("contain", "Mobile UX")
+      cy.get(".header").should("contain", "Mobile UI Design")
       cy.get(".description").should(
         "contain",
         "I like to design for the mobile platform"
