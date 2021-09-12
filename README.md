@@ -3,3 +3,5 @@
 
 ### Testing
 Run `yarn cy:open` to run the Cypress tests.
+
+Run `yarn test` to run Jest component tests.

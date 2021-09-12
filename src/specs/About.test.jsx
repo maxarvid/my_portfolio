@@ -7,7 +7,7 @@ describe("About.jsx", () => {
     render(<About />);
   });
 
-  it("is currentlty expected to contain lorem ipsum", () => {
+  it("is currently expected to contain lorem ipsum", () => {
     expect(
       screen.getByText(
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
