@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && echo '/* /index.html 200' | cat >build/_redirectss",
-    "test": "react-scripts test",
+    "test": "react-scripts test specs",
     "eject": "react-scripts eject",
     "cy:open": "cypress open & yarn start"
   },

@@ -4,7 +4,7 @@ import { Container } from "semantic-ui-react";
 const About = () => {
   return (
     <Container>
-      <h1 id="about-header">About Me</h1>
+      <h1 id="about-header" data-testid="about-header">About Me</h1>
       <p>
         TKTKTKTKTKTKT To be added. Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Mollitia harum quaerat quo, explicabo sed amet quam
