@@ -17,4 +17,8 @@ describe("About.jsx", () => {
       )
     ).toBeInTheDocument();
   });
+
+  it("is expected to be accessible by id", () => {
+    expect(screen.getByTestId("about-header")).toHaveTextContent("About Me");
+  });
 });
