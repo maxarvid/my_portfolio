@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Freelance",
+    "range": "2019 to Present",
+    "description": "Clients inlcude Make.Good and the Edward E. Ford Foundation."
+  },
+  {
+    "id": 2,
+    "name": "Human Rights Watch",
+    "range": "2016-2018",
+    "description": "Worked on digital rights issues, link to dispatches."
+  },
+  {
+    "id": 3,
+    "name": "Delegegation of the EU to the UN",
+    "range": "2009-2014",
+    "description": "Cut my diplomatic teeth"
+  }
+]
